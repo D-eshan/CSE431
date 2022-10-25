@@ -98,8 +98,9 @@ def DoInsertionSort(arr: list):
 
 
 if __name__ == '__main__':
-    N = 1000
+    N = 100
     random.seed(10)
     array = [random.random() for _ in range(N)]
+    array_ = [i for i in array]
     DoMergeSort(array)
-    DoInsertionSort(array)
+    DoInsertionSort(array_)
